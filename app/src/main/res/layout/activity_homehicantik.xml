@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".Homehicantik"
+    android:id="@+id/drawer_layout">
+
+    <LinearLayout
+        android:id="@+id/Layout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <TextView
+            android:id="@+id/TVprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="25dp"
+            android:text="Dashboard"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVberanda"
+            android:layout_marginTop="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVberanda">
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tvinfo_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_below="@+id/Layout2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/linLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/fitur_booking"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/static_info_model_bg"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imagebooking"
+                            android:layout_width="105dp"
+                            android:layout_height="105dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/booking_klinik" />
+
+                        <TextView
+                            android:id="@+id/TVbooking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="105dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Booking"
+                            android:textStyle="bold"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fitur_info"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toEndOf="@+id/fitur_booking"
+                        android:background="@drawable/static_info_model_bg"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="105dp"
+                            android:layout_height="105dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/tentang_kami" />
+
+                        <TextView
+                            android:id="@+id/TVfitur2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="105dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Info"
+                            android:textStyle="bold"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="145dp"
+                    android:layout_below="@+id/TVfitur"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/fitursaran"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/static_info_model_bg"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagefitur3"
+                            android:layout_width="105dp"
+                            android:layout_height="105dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/saran_aplikasi" />
+
+                        <TextView
+                            android:id="@+id/TVfitur3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="105dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Kirim Saran"
+                            android:textStyle="bold"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fiturdetail"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginVertical="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toEndOf="@+id/fitursaran"
+                        android:background="@drawable/static_info_model_bg"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imagefitur4"
+                            android:layout_width="105dp"
+                            android:layout_height="105dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/tambah_dokter" />
+
+                        <TextView
+                            android:id="@+id/TVfitur4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="105dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Info Dokter"
+                            android:textStyle="bold"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_nav_menu">
+
+        <include layout="@layout/main_nav_drawer" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

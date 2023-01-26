@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_kami"
+    tools:context=".update_treatment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="update Treatment"
+        app:titleTextColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/idgmbrupdttreat"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/noimages"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_ic_gambar"
+            android:gravity="center"
+            app:civ_border_color="@color/background"
+            app:civ_border_width="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/IM_updatetreat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_foto"
+                android:clickable="true"
+                android:elevation="3dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/ETJenisupdate"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Jenis Treatment"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_klinik"
+        android:drawablePadding="15dp" />
+    <EditText
+        android:id="@+id/ETDeskripsi"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Deskripsi Klinik"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="12dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_motto"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/ETBiaya"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Biaya"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/BTNupdate"
+        android:layout_width="296dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttons"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+

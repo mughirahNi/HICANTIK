@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_kami"
+    tools:context=".Update_Dokter">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="update Dokter"
+        app:titleTextColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/idgmb"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/noimages"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_ic_gambar"
+            android:gravity="center"
+            app:civ_border_color="@color/background"
+            app:civ_border_width="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/IM_update"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_foto"
+                android:clickable="true"
+                android:elevation="3dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/Etnamadokterupdate"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nama Dokter"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="15dp" />
+    <EditText
+        android:id="@+id/ETkeahlian"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Keahlian"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="12dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_motto"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/ETkontak"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Kontak Dokter"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/Etjadwal"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Jadwal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_jadwal"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/ETalamatupdate"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_design"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Alamat klinik"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_alamat"
+        android:drawablePadding="15dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <Button
+        android:id="@+id/BTNupdatedok"
+        android:layout_width="296dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttons"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+

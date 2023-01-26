@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listLayout"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/sarannama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/saranemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvsaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saran"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

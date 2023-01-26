@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list"
+    android:orientation="vertical"
+    tools:context=".reservasi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Verifikasi Reservasi"
+        app:titleTextColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="12dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_saran">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Form reservasi"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Isi Detail Info Anda"/>
+
+        <EditText
+            android:id="@+id/etnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Nama Lengkap"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edJenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_motto"
+            android:drawablePadding="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Jenis Treatment"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/etdok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Dokter"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edttanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_jadwal"
+            android:drawablePadding="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="tanggal treatment"
+            android:paddingHorizontal="20dp"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/edtwaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Wakatu Reservasi"
+            android:paddingHorizontal="20dp"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/Reservasi"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/buttons"
+            android:text="Reservasi Now"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:elevation="2dp"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

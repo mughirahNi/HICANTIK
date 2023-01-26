@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hicantik</string>
+    <string name="prefLoginState">loginstate</string>
+    <string name="btnNext">Next</string>
+    <string name="btnSkip">Skip</string>
+    <string name="btnStart">Start</string>
+    <string name="desc_onboarding1">pilih dokter kecantikan terbaik</string>
+    <string name="desc_onboarding2">kamu dapat melakukan konsultasi dengan dokter pilihan kamu dan dapatkan perawatan terbaik</string>
+    <string name="desc_onboarding3">lakukan reservasi online dengan mudah</string>
+    <string name="title_onboarding1">find a doctor</string>
+    <string name="title_onboarding2">consultation and treatment</string>
+    <string name="title_onboarding3">you can make a reservation</string>
+    <string name="imageview">imageview</string>
+    <string name="Name">Name</string>
+    <string name="deskripsi_klinik">deskripsi klinik</string>
+    <string name="info">Aplikasi ini merupakan aplikasi reservasi online yang memudahkan pengguna melakukan reservasi pada klinik kecantikan</string>
+</resources>

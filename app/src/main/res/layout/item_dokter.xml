@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listLayout"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="15dp"
+    android:layout_marginBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noimages" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/Tvnamadok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:text="Nama Dokter"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/IDkeahlian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keahlian"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/TVkeahlian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keahlian"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kontak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kontak"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/Tvkontak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kontak"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jdwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jadwal"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/TVjadwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jadwal"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tempatkerja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Klinik"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/TVnama_klinik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Klinik"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
